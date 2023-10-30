@@ -323,7 +323,7 @@ header>.header_container>.navbar>.menu>li:nth-child(7) {
 }
 .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
     display: flex;
-    width: 55%;
+    width: 471px;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
@@ -332,7 +332,7 @@ header>.header_container>.navbar>.menu>li:nth-child(7) {
     border-radius: 16px;
     padding: 23px 0px;
     color: #F5F2EE;
-    font-size: 35px;
+    font-size: 38px;
     line-height: 46px;
     letter-spacing: 3.57px;
     font-family: 'filsonsoft-heavy';
@@ -515,16 +515,17 @@ header>.header_container>.navbar>.menu>li:nth-child(7) {
 }
 
 .slider_wrapper .slider_instagram .slider_content .slider_content_header img {
-    width: 3.6vw;
+    width: min(4vw, 72px);
+    height: min(4vw, 73px);
     padding-left: 10px;
 }
 
 .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
     color: #FFFFFF;
-    font-size: 1.46vw;
-    line-height: 1.8vw;
-    width: 17vw;
-    letter-spacing: 1px;
+    font-size: min(2vw, 28px);
+    line-height: min(2vw, 33px);
+    width: min(18vw, 310px);
+    letter-spacing: 0px;
 }
 
 .slider_wrapper .slider_instagram .slider_content .slider_content_main {
@@ -539,8 +540,8 @@ header>.header_container>.navbar>.menu>li:nth-child(7) {
 
 .slider_wrapper .slider_instagram .slider_content .slider_read_more p {
     color: #fff;
-    font-size: 1.3vw;
-    line-height: 1.5vw;
+    font-size: min(2vw, 24px);
+    line-height: min(2vw, 28px);
     text-align: right;
 }
 
@@ -590,18 +591,17 @@ header>.header_container>.navbar>.menu>li:nth-child(7) {
 
 .read_more_sec .container .merch_btn {
     display: flex;
-    width: clamp(280px, 40vw, 630px);
+    width: clamp(299px, 37vw, 706px);
     align-items: center;
     justify-content: center;
     background: #8E41D8;
     border: 1px solid #8E41D8;
     border-radius: 16px;
-    padding: 32px 0px;
-    letter-spacing: 3px;
+    padding: 34px 0px;
+    letter-spacing: 4.89px;
     color: #F5F2EE;
-    font-size: min(4vw, 46px);
-    line-height: auto;
-    letter-spacing: 3.57px;
+    font-size: min(3vw, 52px);
+    line-height: min(4vw, 63px);
     font-family: 'filsonsoft-heavy';
 }
 
@@ -750,22 +750,23 @@ section>.slider_container {
 .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header {
     display: flex;
     max-width: 100%;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     margin-bottom: 40px;
 }
 
 .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header img {
-    width: 6vw;
+    width: min(6vw, 111px);
+    height: min(6vw, 113px);
     padding-left: 10px;
 }
 
 .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header h4 {
     color: #FFFFFF;
-    font-size: 2.4vw;
-    line-height: 3vw;
+    font-size: min(3vw, 43px);
+    line-height: min(3vw, 52px);
     font-family: 'filsonsoft-heavy';
-    width: 28vw;
+    width: min(25vw, 454px);
 }
 
 .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_main {
@@ -778,10 +779,10 @@ section>.slider_container {
 
 .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_main p {
     color: #fff;
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: min(3vw, 37px);
+    line-height: min(3vw, 44px);
     text-align: right;
-    margin: 20px 20px 5px;
+    margin: 40px 13px 0px;
     text-transform: uppercase;
     font-family: 'filsonsoft-heavy';
 }
@@ -790,13 +791,13 @@ section>.slider_container {
     padding-left: 30px;
 }
 .cooking_wrapper .container .cooking_sec .cooking_txt_sec .cooking_txt_headings h2 {
-    font-size: min(7vw, 123px);
-    line-height: min(8vw, 145px);
+    font-size: min(7vw, 131px);
+    line-height: min(9vw, 157px);
     color: #fff;
     font-family: 'filsonsoft-heavy';
 }
 .cooking_wrapper .container .cooking_sec .cooking_txt_sec .cooking_txt_headings h1 {
-    font-size: min(17vw, 320px);
+    font-size: min(17.5vw, 334px);
     line-height: min(8vw, 150px);
     color: #8E41D8;
     font-family: 'ofl-sorts-mill-goudy';
@@ -1021,12 +1022,11 @@ section>.slider_container {
 }
 
 /* Media Query */
-@media screen and (max-width: 1800px) {
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        font-size: 35px;
-        line-height: 45px;
+@media screen and (max-width: 1815px) {
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header h4 {
+        font-size: min(2.3vw, 43px);
+        width: min(26vw, 454px);
     }
-
     /* Main Page 2 Css */
     .talent_news_wrapper .talent_news_sec .talent_news_header .news_header_caption .caption_part_1 .caption_details p {
         font-size: 23px;
@@ -1035,11 +1035,6 @@ section>.slider_container {
 }
 
 @media screen and (max-width: 1700px) {
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        font-size: 32px;
-        line-height: 42px;
-    }
-
     /* Main Page 5 Css */
     .main_container .container .project_caption_wrapper .project_caption_txt h1 {
         font-size: 7.2vw;
@@ -1052,17 +1047,16 @@ section>.slider_container {
         line-height: 25px;
     }  
     .cooking_wrapper .container .cooking_sec .cooking_txt_sec .cooking_btn_sec button {
-        font-size: min(2.5vw, 46px);
+        font-size: min(2.2vw, 46px);
         line-height: min(2vw, 55px);
+    }
+    .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
+        font-size: min(1.6vw, 28px);
+        line-height: min(2vw, 33px);
     }
 }
 
 @media screen and (max-width: 1550px) {
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        font-size: 26px;
-        line-height: 36px;
-    }
-
     /* Main page 5 Css */
     .main_container .container .project_caption_wrapper .project_caption_txt h1 {
         font-size: 6.9vw;
@@ -1077,14 +1071,8 @@ section>.slider_container {
 }
 
 @media screen and (max-width: 1300px) {
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
     .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
-        font-size: 1.4vw;
-        width: 15vw;
+        font-size: 1.3vw;
     }
 
     /* Main Page 5 Css */
@@ -1112,22 +1100,13 @@ section>.slider_container {
 
 @media screen and (max-width: 1080px) {
     .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        font-size: 17px;
-        line-height: 27px;
-    }
-
-    .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
-        font-size: 1vw;
-        line-height: 1.4vw;
-        width: 13.4vw;
+        font-size: 26px;
+        line-height: 36px;
+        width: 350px;
     }
 
     .main_merch_sec .read_more_sec {
         padding: 100px 0px 60px;
-    }
-
-    .main_merch_sec .read_more_sec .container .merch_btn {
-        width: 26vw;
     }
 
     /* Main Page Css */
@@ -1148,32 +1127,33 @@ section>.slider_container {
 }
 
 @media screen and (max-width: 990px) {
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        width: 70%;
-        font-size: 17px;
-        line-height: 27px;
-        padding: 15px 0px;
-    }
-
-    .main_merch_sec .read_more_sec .container .merch_btn {
-        width: 28vw;
-    }
-
     .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
-        font-size: 2.1vw;
-        line-height: 2vw;
-        width: 26.4vw;
+        font-size: 2.3vw;
+        line-height: 3vw;
+        width: min(25vw, 310px);
     }
 
     /* Main Page 4 Css */
     .cooking_wrapper .container .cooking_posts .cooking_post_content {
-        width: 50%;
+        width: 38%;
+        padding: 15px;
+    }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header {
+        gap: 14px;
     }
 
     .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header h4 {
-        font-size: 2.4vw;
-        line-height: 3vw;
-        width: 27vw;
+        font-size: min(2.2vw, 43px);
+        line-height: min(3vw, 53px);
+        width: min(24vw, 454px);
+    }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header {
+        margin-bottom: 18px;
+    }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_main p {
+        font-size: min(3vw, 16px);
+        line-height: min(3vw, 20px);
+        margin: 18px 13px 0px;
     }
 
     /* Main Page 5 CSS */
@@ -1278,13 +1258,6 @@ section>.slider_container {
         padding-bottom: 30px;
     }
 
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        width: 55%;
-        font-size: 26px;
-        line-height: 36px;
-        padding: 15px 0px;
-    }
-
     .main_merch_sec .container .merch_container .merch_img_sec {
         width: 100%;
     }
@@ -1302,7 +1275,7 @@ section>.slider_container {
     }
     .main_merch_sec .childish_slider_sec .container h1 {
         font-size: min(12vw, 59px);
-        line-height: min(10vw, 55px);
+        line-height: min(11vw, 55px);
         padding-inline: min(5vw, 20px);
         width: 100%;
         box-sizing: border-box;
@@ -1322,12 +1295,6 @@ section>.slider_container {
     }
     .slider_wrapper {
         padding: 50px 0px 80px;
-    }
-
-    .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
-        font-size: 2vw;
-        line-height: 2.4vw;
-        width: 21.4vw;
     }
 
     .main_merch_sec .read_more_sec .container .merch_btn {
@@ -1353,6 +1320,23 @@ section>.slider_container {
     .cooking_wrapper .container .mobile_cooking_sec .cooking_sec{
         display: flex !important;
     }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content {
+        width: 80%;
+        padding: 15px;
+    }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header img {
+        width: min(10vw, 111px);
+        height: min(10vw, 113px);
+    }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header h4 {
+        font-size: min(5.2vw, 43px);
+        line-height: min(6vw, 53px);
+        width: min(60vw, 454px);
+    }
+    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_main p {
+        font-size: min(4vw, 25px);
+        line-height: min(4vw, 30px);
+    }
     .cooking_wrapper .container .cooking_sec .cooking_txt_sec .cooking_btn_sec button {
         font-size: min(5vw, 46px);
         line-height: min(1vw, 55px);
@@ -1373,8 +1357,8 @@ section>.slider_container {
         line-height: min(12vw, 145px);    
     }
     .cooking_wrapper .container .cooking_sec .cooking_txt_sec .cooking_txt_headings h1 {
-        font-size: min(30vw,222px);
-        line-height: min(15vw, 150px);     
+        font-size: min(32.3vw, 222px);
+        line-height: min(16vw, 150px);
     }
     .cooking_wrapper .container .mobile_cooking_sec .cooking_sec  .cooking_txt_sec {
         width: 100%;
@@ -1401,7 +1385,7 @@ section>.slider_container {
     }
     .news_page_btn_section .container .news_page_btn{
         padding: 15px 0px;     
-        font-size: min(5vw, 30px);
+        font-size: min(4vw, 23px);
     }
 
     /* Main Page 5 CSS */
@@ -1475,14 +1459,10 @@ section>.slider_container {
     .slick-dots li.slick-active button:before {
         color: #dbd6df !important;      
     }
+    
 }
 
 @media screen and (max-width: 650px) {
-    .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
-        font-size: 21px;
-        line-height: 31px;
-    }
-
     .main_merch_sec .read_more_sec .container .merch_btn {
         width: 32vw;
     }
@@ -1490,23 +1470,40 @@ section>.slider_container {
     .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header h4 {
         width: 64vw;
     }
+    .slider_wrapper .slider_instagram .slider_content .slider_content_header {
+        gap: 10px;
+    }
+    .slider_wrapper .slider_instagram .slider_content .slider_content_header img {
+        width: min(5vw, 72px);
+        height: min(5vw, 73px);
+    }
 }
-
+@media screen and (max-width: 590px) {
+    .slider_wrapper .slider_instagram .slider_content .slider_content_header img {
+        width: min(8vw, 72px);
+        height: min(8vw, 73px);
+    }
+    .slider_wrapper .slider_instagram .slider_content .slider_content_header {
+        gap: 20px;
+    }
+    .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
+        font-size: min(5.2vw, 30px);
+        line-height: min(6vw, 33px);
+        width: min(62vw, 360px);
+    }
+    .slider_wrapper .slider_instagram .slider_content .slider_content_main {
+        margin-bottom: 18px;
+    }
+    .slider_wrapper .slider_instagram .slider_content .slider_read_more p {
+        font-size: min(4.5vw, 24px);
+        line-height: min(5vw, 28px);
+    }
+}
 @media screen and (max-width: 580px) {
     .slider_wrapper .slider_instagram .slider_content .slider_content_header img {
-        width: 10vw;
+        width: min(10vw, 72px);
+        height: min(10vw, 73px);
         padding-left: 10px;
-    }
-
-    .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
-        font-size: 5vw;
-        line-height: 5.4vw;
-        width: 57vw;
-    }
-
-    .slider_wrapper .slider_instagram .slider_content .slider_read_more p {
-        font-size: 4vw;
-        line-height: 4.5vw;
     }
 
     /* Main Page 2 CSS */
@@ -1526,7 +1523,7 @@ section>.slider_container {
     .main_merch_sec .container .merch_container .merch_intro_sec .merch_btn {
         font-size: 18px;
         line-height: 22px;
-        width: 235px;
+        width: 218px;
         padding: 10px 0px;
         margin-top: 30px;
         letter-spacing: 1.69px;
@@ -1547,15 +1544,10 @@ section>.slider_container {
     }
 
     .slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
-        font-size: 3.5vw;
-        line-height: 4.5vw;
-        width: 70vw;
+        font-size: min(4.2vw, 30px);
+        line-height: min(5vw, 33px);
+        width: min(53vw, 360px);
         text-transform: uppercase;
-    }
-
-    .slider_wrapper .slider_instagram .slider_content .slider_read_more p {
-        font-size: 4vw;
-        line-height: 4.5vw;
     }
 
     .slick-dots {
@@ -1598,10 +1590,6 @@ section>.slider_container {
     .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header {
         gap: 10px;
         margin-bottom: 17px;
-    }
-
-    .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_header img {
-        width: 13vw;
     }
 
     /* Main Page 2 Css */
@@ -1672,12 +1660,20 @@ section>.slider_container {
 .cooking_wrapper .container .cooking_posts .cooking_post_content .cooking_post_main p {   
     margin: 10px 20px 5px ;
 }
+.slider_wrapper .slider_instagram .slider_content .slider_content_header h4 {
+    font-size: min(3.5vw, 30px);
+    line-height: min(5vw, 33px);
+    width: min(45vw, 360px);
+}
 }
 
 @media screen and (max-width: 320px) {  
     /* Main Page 2 Css */
     .talent_news_wrapper .talent_news_sec .talent_news_header .news_header_caption .caption_part_1 .caption_details p {
         font-size: 3.8vw;
+    }
+    .cooking_wrapper .container .cooking_sec .cooking_txt_sec .cooking_btn_sec button {
+        font-size: min(3.8vw, 46px);
     }
 }
 /* footer  */

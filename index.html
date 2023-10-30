@@ -180,7 +180,7 @@
         <hr class="hr_tag_border" style="margin-bottom: min(6vw, 67px);" >
     </section>
     <!-- featured_talent  -->
-    <section class="featured_talent">
+    <section class="featured_talent" id="featured_talent">
         <div class="featured_container">
             <div class="featured_wrapper">
                 <div class="featured_heading">
@@ -193,8 +193,8 @@
                     <a href="#">SEE MORE...</a>
                     <href></href>
                 </div>
-                <img src="assets/images/char.jpg" alt="char_img" class="featured_img1">
-                <img src="assets/images/char2.jpg" alt="char2_img" class="featured_img2">
+                <img src="assets/images/char.jpg" alt="char_img" class="featured_img1 featured_talent_img1" style="z-index: -1;; right: 0%;" >
+                <img src="assets/images/char2.jpg" alt="char2_img" class="featured_img2 featured_talent_img2" style="z-index: -1; ;; left: 0%;">
                 <img src="assets/images/star.png" alt="star_img" class="featured_star">
                 <img src="assets/images/star.png" alt="star_img" class="featured_star featured_star2">
                 <img src="assets/images/star.png" alt="star_small_img" class="featured_star_small">
@@ -649,6 +649,12 @@
             </div>
         </div>
     </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
@@ -692,6 +698,27 @@
             const menu = document.getElementById("menu");
             menu.classList.toggle("active");
         };
+                // init controller
+var controller = new ScrollMagic.Controller();
+
+var tween = TweenMax.fromTo(".featured_talent_img1", 1,
+								{top: '100%'},
+								{top: '22%', repeat: 0, yoyo: false, ease: Circ.easeInOut}
+							);
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#featured_talent", duration: innerWidth<576 ? '50%':'90%', offset:50})
+					.setTween(tween)					
+					.addTo(controller);
+var tween = TweenMax.fromTo(".featured_talent_img2", 1,
+								{top: '0vw'},
+								{top: '39vw', repeat: 0, yoyo: false, ease: Circ.easeInOut}
+							);
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#featured_talent", duration:innerWidth<576 ? '50%':'90%', offset:50})
+					.setTween(tween)				
+					.addTo(controller);
     </script>
 </body>
 </html>
